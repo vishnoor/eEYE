@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="img/photos/apple-touch-icon.png" />
+    <link rel="apple-touch-startup-image" href="img/photos/apple-touch-startup-image-320x460.png" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" sizes="196x196" href="img/photos/196x196.png">
+    <link rel="shortcut icon" sizes="128x128" href="img/photos/128x128.png">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#000000">
+    <!-- Your app title -->
+    <title>Vehicle Tracking System</title>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
+    <!-- Path to Framework7 Library CSS, Material Theme -->
+    <link rel="stylesheet" href="css/framework7.material.min.css">
+    <!-- Path to Framework7 color related styles, Material Theme -->
+    <!--<link rel="stylesheet" href="css/framework7.material.colors.min.css">-->
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" type="text/css" href="fonts/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/my-app.css">
+</head>
+<body class="theme-black">
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+
+    <div class="views">
+        <div class="view view-main">
+
+            <!-- Views -->
+            <div class="pages">
+                <div data-page="login" class="page">
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="center">Vehicle Tracker</div>
+                        </div>
+                    </div>
+                    <div class="page-content text-center login-back">
+
+                        <div class="page-top-cover"></div>
+                        <div class="text-large margin-top-15">Login</div>
+                        <form id="frmLogin">
+                            <input type="hidden" name="grant_type" value="password" />
+                            <div class="list-block margin-bottom-30 samosa">
+                                <ul class="no-border">
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="input-icon item-media"><i class="flaticon-avatar"></i></div>
+                                            <div class="item-inner no-margin">
+                                                <div class="item-input">
+                                                    <input type="text" placeholder="Username" id="username" name="username">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="input-icon item-media"><i class="flaticon-question"></i></div>
+                                            <div class="item-inner no-margin">
+                                                <div class="item-input">
+                                                    <input type="password" placeholder="Password" id="password" name="password">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="item-content">
+                                            <div class="input-icon item-media"><i class="flaticon-key"></i></div>
+                                            <div class="item-inner no-margin">
+                                                <div class="item-input">
+                                                    <input type="password" placeholder="Client Key" id="UserClient" name="UserClient">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="row btn-form-group margin-bottom-10">
+                                            <div class="col-100">
+                                                <input type="checkbox" class="text-thiny">Keep Me Signed In
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="row btn-form-group margin-bottom-10">
+                                <div class="col-100">
+                                    <a href="#" id="btnLogin" class="button button-login button-fill">Log In</a>
+                                </div>
+
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Jquery-->
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+
+    <script type="text/javascript" src="js/my-app.js"></script>
+
+    <script type="text/javascript" src="js/controllers/login.js"></script>
+
+
+</body>
+
+</html>

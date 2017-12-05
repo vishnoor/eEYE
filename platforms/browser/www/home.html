@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="img/photos/apple-touch-icon.png" />
+    <link rel="apple-touch-startup-image" href="img/photos/apple-touch-startup-image-320x460.png" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" sizes="196x196" href="img/photos/196x196.png">
+    <link rel="shortcut icon" sizes="128x128" href="img/photos/128x128.png">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#000000">
+    <!-- Your app title -->
+    <title>Vehicle Tracking System</title>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
+    <!-- Path to Framework7 Library CSS, Material Theme -->
+    <link rel="stylesheet" href="css/framework7.material.min.css">
+    <!-- Path to Framework7 color related styles, Material Theme -->
+    <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+    <!-- Slick Carousel -->
+    <!--<link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="fonts/flaticon.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/my-app.css">
+</head>
+<body class="theme-black">
+    <!-- Left panel with reveal effect-->
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div id="left-menu" class="panel panel-left panel-reveal">
+        <div class="content-block">
+            <div class="left-menu-profile text-center">
+
+                <div class="margin-top-30">
+                    <img src="img/photos/user-1.png" alt="user" width="80" height="80">
+                </div>
+                <div class="text-small text-capitalize">
+                    Shiva M
+                </div>
+                <div class="text-extrat-thiny gray-text text-capitalize icon-location">
+                    <i class="flaticon-placeholder-1"></i> Malaysia
+                </div>
+            </div>
+        </div>
+        <!-- Menu items -->
+        <div class="list-block list-menu">
+            <ul>
+                <li class="active-menu">
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="flaticon-placeholder-1"></i>
+                        </div>
+                        <div class="item-inner no-margin">
+                            <div class="item-title">
+                                <a href="home.html" class="close-panel no-animation external">Live Map</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="flaticon-list-of-works"></i>
+                        </div>
+                        <div class="item-inner no-margin">
+                            <div class="item-title">
+                                <a href="history.html" class="close-panel no-animation">History</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="flaticon-alarm-clock"></i>
+                        </div>
+                        <div class="item-inner no-margin">
+                            <div class="item-title">
+                                <a href="#" class="close-panel no-animation">Critical Alerts</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="flaticon-flag-1"></i>
+                        </div>
+                        <div class="item-inner no-margin">
+                            <div class="item-title">
+                                <a href="#" class="close-panel no-animation">Other Alerts</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="flaticon-settings"></i>
+                        </div>
+                        <div class="item-inner no-margin">
+                            <div class="item-title">
+                                <a href="settings.html" class="close-panel no-animation">Settings</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <div class="item-media">
+                            <i class="flaticon-power-button"></i>
+                        </div>
+                        <div class="item-inner no-margin">
+                            <div class="item-title">
+                                <a href="index.html" class="external">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Menu items -->
+    </div>
+    <div class="views">
+        <div class="view view-main">
+
+            <div class="pages navbar-fixed">
+                <div data-page="home" class="page">
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="left"><a href="#" class="back link"></a></div>
+                            <div class="center">Active Vehicles</div>
+                            <div class="right">
+                                <!-- Right link contains only icon - additional "icon-only" class-->
+                                <a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-content pull-to-refresh-content" data-ptr-distance="55">
+                        <!-- Default pull to refresh layer-->
+                        <div class="pull-to-refresh-layer">
+                            <div class="preloader"></div>
+                            <div class="pull-to-refresh-arrow"></div>
+                        </div>
+                        <div id="pnlUp" style="width:100%;height:50%;">
+                            <div id="googleMap" style="width:100%;height:100%;"></div>
+                        </div>
+                        <div id="pnlDown" style="width:100%;height:50%;overflow:auto;">
+                            <div id="vwInfo">
+                                <div class="content-block-title">
+                                    <b>Vehicle List</b>
+                                    <div class="pull-right"><i id="tglPane" class="fa fa-chevron-up" data-state="down"></i></div>
+                                </div>
+                                <div class="list-block media-list">
+                                    <ul id="lstActiveVehicles">
+                                        <!-- Populated by Framework 7 . Do not remove-->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery-->
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <!-- Slick Carousel -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- DateJS for Formatting -->
+    <script type="text/javascript" src="js/moment.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5gueaegqaB1E58n44Nr_0zZA1Ridpevc"></script>
+
+    <script type="text/javascript" src="js/controllers/active.js"></script>
+
+    <script type="text/javascript" src="js/controllers/history.js"></script>
+
+    <!-- Templates for Marker Infowindows -->
+
+    <script type="text/template7" id="markerInfoWindow">
+        <div class="popover" style="width: 95%;">
+            <div class="popover-inner">
+                <div class="card">
+                    <div class="card-header">{{idx}} - {{Vname}}</div>
+                    <div class="card-content">
+                        <div class="card-content-inner">
+                            <div class="row">
+                                <div class="col-35"><b>Date Time</b></div>
+                                <div class="col-65">{{fmtDate Gpsdt "MM/DD/YYYY hh:mm:ss A"}}</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-35"><b>Latitude</b></div>
+                                <div class="col-65">{{js "this.Latitude / 1000000"}}</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-35"><b>Longitude</b></div>
+                                <div class="col-65">{{js "this.Longitude / 1000000"}}</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-35"><b>Location</b></div>
+                                <div class="col-65">{{MapInfoAdd}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <script type="text/template7" id="vehicleListTmpl">
+        <li class="item-content">
+            <div class="item-media">
+                <div class="chip">
+                    <div class="chip-media">
+                        {{idx}}
+                    </div>
+                </div>
+            </div>
+            <div class="item-inner">
+                <div class="item-title-row">
+                    <div class="item-title" data-vid="{{Fullvid}}"><b>{{Vname}}</b></div>
+                    <div class="item-after">{{Event}}</div>
+                </div>
+                <div class="item-text">{{fmtDate Gpsdt "MM/DD/YYYY hh:mm:ss A"}}</div>
+            </div>
+        </li>
+    </script>
+
+
+</body>
+</html>

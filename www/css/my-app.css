@@ -1,0 +1,356 @@
+/*==============================================
+[Main stylesheet my-app.css]
+
+Author:			HostRider
+Version:		1.0
+Created:		10 January 2017
+Last updated:	19 January 2017
+Template:		RUSTYCARS - JUNK CARS SALE Responsive App Mobile
+================================================*/
+/*
+[Table of Contents]
+
+01. COVER PAGE
+02. LOGIN & REGISTER & REMEMBER PASSWORD
+03. LEFT MENU
+04. WALKTHROUGH
+05. RUSTY
+06. DETAIL RUSTY
+07. CAR CATEGORIES
+08. RESERVATION FORM
+09. LISTs
+10. SLIDER
+
+*/
+
+.no-border::after,
+.no-border::before {
+    background: none !important;
+}
+
+/*===============================================*/
+/* 01. COVER PAGE	 						     */
+/*===============================================*/
+
+#app-cover {
+    background-image: url(../img/photos/bg-cover1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #FFFFFF;
+    padding: 32px 15px;
+    text-align: center;
+}
+
+.app-cover-content {
+    padding-top: 40px;
+}
+
+.panel {
+    background: #ffffff;
+}
+
+.samosa {
+    margin: 10px 0;
+}
+
+
+/*===============================================*/
+/* 02. LOGIN & REGISTRE & REMEMBER PASSWORD	     */
+/*===============================================*/
+
+
+.page-top-cover {
+    width: 100%;
+    height: 270px;
+    background-image: url(../img/photos/vt.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar-no-color {
+    background: transparent !important;
+}
+
+.navbar {
+    background-color: #3f51b5 !important;
+}
+
+.input-icon {
+    margin-bottom: 0px !important;
+}
+
+    .input-icon i:before {
+        font-size: 26px !important;
+    }
+
+.btn-form-group {
+    padding: 0px 15px;
+}
+
+.recover-password {
+    padding: 0px 30px;
+}
+
+.icon-recover i:before {
+    font-size: 70px;
+}
+
+.back-close-icon i:before {
+    font-size: 22px;
+}
+
+
+/*===============================================*/
+/* 03. LEFT MENU	 						     */
+/*===============================================*/
+
+.left-menu-profile i:before {
+    font-size: 18px !important;
+}
+
+.left-menu-profile input[type="text"] {
+    border: 0px;
+    background: #EFEFEF;
+    width: 100%;
+    height: 26px;
+    text-align: center;
+    border-radius: 3px;
+    font-family: "Montserrat" !important;
+}
+
+.left-menu-profile .icon-location i:before {
+    font-size: 10px !important;
+}
+
+.list-menu {
+    margin: 30px 0px !important;
+}
+
+    .list-menu i:before {
+        font-size: 20px !important;
+    }
+
+/*===============================================*/
+/* 04. WALKTHROUGH	 						     */
+/*===============================================*/
+
+.walkthrough-icon {
+    width: 100px;
+    height: 100px;
+    margin: 60px auto 40px;
+}
+
+.walkthrough-item {
+    padding: 0px 15px;
+}
+
+.slick-dots li button::before {
+    font-size: 20px !important
+}
+
+.slick-dots li {
+    margin: 0 3px !important;
+}
+
+/*===============================================*/
+/* 05. RUSTY      	 						     */
+/*===============================================*/
+
+.rusty {
+    margin-bottom: 40px;
+}
+
+.rusty-img {
+    width: 100%;
+    height: auto;
+}
+
+.rusty-grid {
+    margin-bottom: 30px;
+}
+
+.link-deeporange {
+    color: #ff5722 !important;
+}
+
+/*===============================================*/
+/* 06. DETAIL RUSTY      	 				     */
+/*===============================================*/
+
+.tabs-menu {
+    margin: 15px 0px 0px !important;
+}
+
+    .tabs-menu a.active {
+        color: #ff5722 !important;
+    }
+
+.user-reviews-star {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+    .user-reviews-star li {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+.gray-star:before {
+    color: gray !important;
+}
+
+.yellow-star:before {
+    color: #FFC107 !important;
+}
+
+/*===============================================*/
+/* 07. CAR CATEGORIES		 				     */
+/*===============================================*/
+
+.car-category {
+    border: 1px solid #EFEFEF;
+    padding: 15px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.icon-category:before {
+    font-size: 60px !important;
+}
+
+/*===============================================*/
+/* 08. RESERVATION FORM							 */
+/*===============================================*/
+
+.reservation-cover {
+    background-image: url(../img/photos/bg-reservation.jpg) !important;
+}
+
+.booking-form ul li {
+    margin-bottom: 15px;
+}
+
+/*===============================================*/
+/* 09. LISTs		 						     */
+/*===============================================*/
+
+.content-background {
+    background: #EFEFEF;
+    color: #6d6d72;
+}
+
+.page-list .item-media i:before {
+    font-size: 24px !important;
+    height: 24px !important;
+}
+
+/*===============================================*/
+/* 10. Slider		 						     */
+/*===============================================*/
+
+.swiper-slide {
+    background: #fff;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+    .swiper-slide span {
+        text-align: center;
+        display: block;
+        margin: 20px;
+        font-size: 21px;
+    }
+
+.swiper-container {
+    text-align: center;
+}
+
+.demo-card-header-pic .card-header {
+    height: 58vw;
+    background-size: cover;
+    background-position: center;
+}
+
+.button-login {
+    border-radius: 5px !important;
+    background-color: #3f51b5 !important;
+}
+
+.button-default {
+    background-color: #4CAF50 !important;
+    color: #FFFFFF !important;
+}
+
+.card-header {
+    background-color: #4CAF50 !important;
+    color: white !important;
+    font-weight: 200 !important;
+}
+
+a.button i {
+    margin-right: 8px;
+}
+
+.row-full-width {
+    width: 100% !important;
+}
+
+.tool-btn.active {
+    border-style: solid;
+    border-color: #3F51B5;
+    background: #3F51B5;
+    color: white !important;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.chip {
+    background: #4CAf50 !important;
+}
+
+.content-block-title {
+    font-size: 18px !important;
+    color: #3F51B5 !important;
+}
+
+.active-menu {
+    background: #FFEB3B;
+}
+
+.modal-title {
+    color: #3F51B5 !important;
+}
+
+.theme-black .modal-button {
+    color: #FFFFFF !important;
+    background: #3F51B5 !important;
+}
+
+.chip-media {
+    margin-left: 0px !important;
+}
+
+div.odo span {
+    background: #959595; /* Old browsers */
+    background: -moz-linear-gradient(top, #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 76%, #383838 87%, #1b1b1b 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=0 ); /* IE6-9 */
+    padding: 4px;
+    margin: 0px;
+    border-right: 1px solid #cfcfcf;
+    font: 11px arial, sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+    div.odo span.digit {
+        background: #ffffff; /* Old browsers */
+        background: -moz-linear-gradient(top, #ffffff 0%, #f1f1f1 50%, #e1e1e1 51%, #f6f6f6 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #ffffff 0%,#f1f1f1 50%,#e1e1e1 51%,#f6f6f6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
+        color: #000000;
+        border-left: 2px solid #249cb7;
+        margin-left: -1px;
+    }
